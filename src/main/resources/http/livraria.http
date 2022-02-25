@@ -1,0 +1,51 @@
+### Criar livros
+POST {{url}}/livros
+Content-Type: application/json
+
+{
+  "name": "biografia",
+  "author": "jeniffer",
+  "value": 12.5,
+  "description": "qwertyuiop"
+}
+
+### Listar livros
+GET {{url}}/livros
+Accept: application/json
+
+### Atualizar Livro
+PUT {{url}}/livros/1
+Content-Type: application/json
+
+  {
+    "id": 20,
+    "nome": "biografia",
+    "valor": 12.50,
+    "autor": "jeniffer",
+    "descricao": "Teste de alteração",
+    "imagem": null,
+    "quantidade": 0,
+    "isbn": null
+  }
+
+### Remover livros
+DELETE {{url}}/livros/10
+
+### Categorias
+POST {{url}}/categorias    HTTP/1.1
+Content-Type: application/json
+
+{
+"name":"Drama"
+}
+
+### listar categorias
+GET {{url}}/categories  HTTP/1.1
+
+###
+POST {{url}}/categories
+Content-Type: application/json
+
+{
+  "name": "Show"
+}
