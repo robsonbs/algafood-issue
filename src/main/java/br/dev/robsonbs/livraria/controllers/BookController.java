@@ -151,7 +151,7 @@ public class BookController {
     return bookRepository.findAll(byAuthor.and(fromThisYear));
   }
   
-  @GetMapping("/por-autor-neste-ano")
+  @GetMapping("/por-autor-neste-ano-v2")
   public List<Book> searchByAuthorFromThisYearV2(String author) {
     
     return bookRepository.findAll(byAuthor(author).and(fromThisYear()));
